@@ -13,8 +13,4 @@ public class HealthController {
         return Map.of("status", "UP", "service", "javapilot-demo1");
     }
 
-    @GetMapping("/api/health")
-    public Map<String, String> health(Integer integer) {
-        return Map.of("status", "UP", "service", "javapilot-demo");
-    }
 }
