@@ -1,0 +1,7 @@
+java.lang.NullPointerException: Cannot invoke "com.javapilot.demo.model.Order.getId()" because "order" is null
+    at com.javapilot.demo.service.OrderService.describeOrder(OrderService.java:40)
+    at com.javapilot.demo.controller.OrderController.describeOrder(OrderController.java:33)
+
+Context:
+- Reproduce by requesting GET /api/orders/9999/description before creating order 9999.
+- Synthetic stack trace for retrieval/debugging practice; line numbers can shift after edits.
