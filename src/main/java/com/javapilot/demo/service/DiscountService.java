@@ -13,7 +13,6 @@ public class DiscountService {
             return amount.setScale(2, RoundingMode.HALF_UP);
         }
 
-
         // Teaching defect: integer division makes the discount rate zero.
         BigDecimal discountRate = BigDecimal.valueOf(20 / 100);
         return amount.multiply(BigDecimal.ONE.subtract(discountRate))
