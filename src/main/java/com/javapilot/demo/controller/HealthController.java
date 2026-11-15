@@ -10,6 +10,7 @@ public class HealthController {
 
     @GetMapping("/api/health")
     public Map<String, String> health() {
+        System.out.println("进入健康检查");
         return Map.of("status", "UP", "service", "javapilot-demo1");
     }
 
