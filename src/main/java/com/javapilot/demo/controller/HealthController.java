@@ -13,7 +13,7 @@ public class HealthController {
     public Map<String, String> health() {
         System.out.println("进入健康检查");
         List list=null;
-
+        //test1
         list.add(1);
         return Map.of("status", "UP", "service", "javapilot-demo1");
     }
