@@ -15,6 +15,7 @@ public class HealthController {
         List list=null;
         //test1
         list.add(1);
+        list.add(2);
         return Map.of("status", "UP", "service", "javapilot-demo1");
     }
 
